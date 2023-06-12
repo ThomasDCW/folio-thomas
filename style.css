@@ -370,17 +370,6 @@ a {
 
 /* Hero Section Stylings */
 
-/* .home-hero {
-  background-image: url(./assets//home.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  height: 100vh;
-  min-height: 80rem;
-  max-height: 120rem;
-  z-index: 0;
-} */
 /* CSS */
 .home-hero {
   background-image: url(./assets/home.jpg);
@@ -410,24 +399,16 @@ a {
   right: 0;
   width: 0;
   height: 100%;
-  border-right: 1px solid #fff;
-  animation: typing 3s steps(20) infinite, blink-caret 1s step-end infinite;
-  animation-delay: 2s; /* Délai avant la répétition de l'animation */
-}
-
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+  border-right: 2px solid #fff;
+  animation: blink-caret 1s step-end infinite;
 }
 
 @keyframes blink-caret {
-  from, to {
+  from,
+  to {
     border-color: transparent;
   }
+
   50% {
     border-color: white;
   }
@@ -452,6 +433,7 @@ a {
   .home-hero__heading-primary {
     margin-bottom: 4.5rem;
   }
+
   .home-hero {
     background-image: url(./assets/home.jpg);
     background-size: 180% auto;

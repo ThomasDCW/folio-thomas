@@ -64,20 +64,7 @@ smMenuCloseBtn.addEventListener('click', () => {
   smMenu.classList.remove('main-header__sm-menu--active');
 });
 
-// const text = "WEB DEVELOPER";
-// const typingText = document.querySelector(".typing-text");
 
-// let i = 0;
-
-// function typeWriter() {
-//   if (i < text.length) {
-//     typingText.textContent += text.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, 100);
-//   }
-// }
-
-// typeWriter();
 
 document.addEventListener('DOMContentLoaded', function() {
   const textElement = document.getElementById('text-animation');
@@ -88,11 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (index < text.length) {
       textElement.textContent += text.charAt(index);
       index++;
-      setTimeout(showNextLetter, 100); // Temps de délai entre chaque lettre (100ms)
-    } else {
-      // Ajoutez ici l'effet de clignotement sur la dernière lettre si vous le souhaitez
-      textElement.classList.add('blink');
-    }
+      setTimeout(showNextLetter, 150); // Temps de délai entre chaque lettre
+    } 
   }
 
   showNextLetter();

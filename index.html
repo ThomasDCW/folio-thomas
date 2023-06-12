@@ -1,439 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
-    <title>Portfolio - Thomas</title>
-    <meta name="description" content="Portfolio Thomas DC" />
-  </head>
 
-  <body>
-    <script>
-      const textElement = document.getElementById('text');
-      const text = textElement.innerText;
-      textElement.innerText = '';
-  
-      let index = 0;
-      let speed = 100; // Vitesse du défilement (en millisecondes)
-  
-      function type() {
-        if (index < text.length) {
-          textElement.innerText += text.charAt(index);
-          index++;
-          setTimeout(type, speed);
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>Portfolio - Thomas</title>
+  <meta name="description" content="Portfolio Thomas DC" />
+</head>
+
+<body>
+  <script>
+    const textElement = document.getElementById('text');
+    const text = textElement.innerText;
+    textElement.innerText = '';
+
+    let index = 0;
+    let speed = 100; // Vitesse du défilement (en millisecondes)
+
+    function type() {
+      if (index < text.length) {
+        textElement.innerText += text.charAt(index);
+        index++;
+        setTimeout(type, speed);
       }
-  
-      type();
-    </script>  
-    <header class="main-header">
-      <div class="main-header__logo-container">
-        <div class="main-header__logo-img-cont">
-          <img
-            src="./assets/photo.jpeg"
-            alt="logo Image"
-            class="main-header__logo-img"
-          />
-        </div>
-        <h4 class="main-header__logo-text">
-          <a href="./index.html">Thomas</a>
-        </h4>
+    }
+
+    type();
+  </script>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img src="./assets/photo.jpeg" alt="logo Image" class="main-header__logo-img" />
       </div>
-      <nav class="main-header__navigation">
-        <ul class="main-header__navigation-links">
-          <li class="main-header__navigation-link">
+      <h4 class="main-header__logo-text">
+        <a href="./index.html">Thomas</a>
+      </h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#about">About</a>
+        </li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects">Projects</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- burger -->
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <!-- burger -->
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close"></div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="home-hero" class="home-hero">
+    <h1 id="text-animation"></h1>
+  </section>
+
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm">About</span>
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Story
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                I am passionate about web development, which is why I decided
+                to retrain after spending the last 7 years working as a
+                paramedic
+              </span>
+              <span>
+                I followed a 5 month training at the Wild Code School and
+                completed a 6 month internship at the User Agency.
+              </span>
+              <span>
+                I am currently working at Karbon as a fullstack developer in an apprenticeship program, as part of my
+                diploma validation for application developer.
+              </span>
+            </p>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">html</li>
+              <li class="about__skill">css</li>
+              <li class="about__skill">javascript</li>
+              <li class="about__skill">typescript</li>
+              <li class="about__skill">REACT</li>
+              <li class="about__skill">node</li>
+              <li class="about__skill">next</li>
+              <li class="about__skill">nest</li>
+              <li class="about__skill">prisma</li>
+              <li class="about__skill">jest</li>
+              <li class="about__skill">git</li>
+              <li class="about__skill">vscode</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-showcase">
+    <ul class="skills-showcase__list">
+      <li class="skills-showcase__list-item">
+        <i class="devicon-html5-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-css3-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-javascript-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-typescript-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-react-original"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-nodejs-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-git-plain"></i>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm">Projects</span>
+      </h2>
+
+      <!-- GALLERY -->
+      <div class="main-section__content">
+        <div class="projects__list">
+
+          <!--BIGBILL -->
+          <div class="projects__list-item">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/bigbillfolio.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                BigBill
+              </h3>
+              <p class="text-primary projects__list-item-text-primary">
+                <span class="date-project"> 29 May 2022 </span>
+                <span>
+                  Pixel art games coded in 24 hours at the first hackathon of
+                  the Wild Code School
+                </span>
+                <span>
+                  Invest your money to get rich while protecting the planet
+                </span>
+                <br />
+                <span class="logo-devicon"><i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-react-original colored"></i></span>
+              </p>
+              <a href="https://github.com/ThomasDCW/hackalillejs0522">
+                <button class="btn btn-inv projects__btn-inv">
+                  Code
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- TODOLIST -->
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/todofolio.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                TodoList
+              </h3>
+              <p class="text-primary projects__list-item-text-primary">
+                <span class="date-project"> Spetember | November 2022 </span>
+                <span>
+                  To-do list management application that includes all
+                  functionalities. You can log in to create, edit and delete
+                  your own todo lists.
+                </span>
+                <br />
+                <span class="logo-devicon"><i class="devicon-typescript-plain colored"></i>
+                  <i class="devicon-nextjs-plain-wordmark colored"></i>
+                  <i class="devicon-redux-original colored"></i>
+                  <i class="devicon-postgresql-plain colored"></i>
+                  <i class="devicon-jest-plain colored"></i></span>
+              </p>
+              <a href="https://gitlab.com/thomas.dicola/todo">
+                <button class="btn btn-inv projects__btn-inv">
+                  Code
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!--MONAMBULANCE -->
+          <div class="projects__list-item">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/ambufolio.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                MonAmbulance
+              </h3>
+              <p class="text-primary projects__list-item-text-primary">
+                <span class="date-project">Work in Progress ...</span>
+                <span>
+                  Online ambulance booking application. I am working on a
+                  first version that I will present to a jury for an
+                  accreditation of learning
+                </span>
+                <span class="logo-devicon">
+                  <i class="devicon-typescript-plain colored"></i>
+                  <i class="devicon-nextjs-plain-wordmark colored"></i>
+                  <i class="devicon-redux-original colored"></i>
+                  <i class="devicon-nestjs-plain colored"></i>
+                  <i class="devicon-postgresql-plain colored"></i>
+                  <i class="devicon-jest-plain colored"></i>
+                </span>
+              </p>
+              <a href="https://gitlab.com/thomas.dicola/ambu-project">
+                <button class="btn btn-inv projects__btn-inv">
+                  Front-End
+                </button>
+              </a>
+              <a href="https://gitlab.com/thomas.dicola/ambu-back">
+                <button class="btn btn-inv projects__btn-inv">
+                  Back-End
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!--WORK IN MUSIC -->
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/wimfolio.png" alt="Project Image" class="projects__list-item-img-mob" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Work in Music
+              </h3>
+              <p class="text-primary projects__list-item-text-primary">
+                <br />
+                <span class="date-project">June | July 2022</span>
+                <span>
+                  Sung lessons on a listening platform, partner project of the
+                  Wild Code School
+                </span>
+                <span>Agil method, daily, weekly meetings, code reviews
+                </span>
+                <span class="logo-devicon"><i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-react-original colored"></i>
+                  <i class="devicon-express-original-wordmark colored"></i>
+                  <i class="devicon-mysql-plain-wordmark colored"></i>
+                </span>
+              </p>
+              <a href="https://github.com/WildCodeSchool/2022-03-JS-Lille-project-3-g2-wim">
+                <button class="btn btn-inv projects__btn-inv">
+                  Code
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- MOVIES.COM -->
+          <div class="projects__list-item projects__list-item">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/moviesfolio.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Movies.com
+              </h3>
+              <p class="text-primary projects__list-item-text-primary">
+                <span class="date-project"> January 2023 </span>
+                <span>
+                  Single Page Application with React, Redux, Redux Saga and
+                  TailwindCSS using TMDB API just for fun !
+                  <br />
+                </span>
+                <br />
+                <span class="logo-devicon">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-react-original colored"></i>
+                  <i class="devicon-redux-original colored"></i>
+                  <i class="devicon-tailwindcss-plain colored"></i>
+                </span>
+              </p>
+              <a href="https://glittering-sprite-cb0be1.netlify.app/">
+                <button class="btn btn-inv projects__btn-inv">
+                  Visit
+                </button>
+              </a>
+              <a href="https://github.com/ThomasDCW/movies.com">
+                <button class="btn btn-inv projects__btn-inv">
+                  Code
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
             <a href="./index.html">Home</a>
           </li>
-          <li class="main-header__navigation-link">
+          <li class="main-footer__link">
             <a href="./index.html#about">About</a>
           </li>
-          <li class="main-header__navigation-link">
+          <li class="main-footer__link">
             <a href="./index.html#projects">Projects</a>
           </li>
         </ul>
-      </nav>
-      <!-- burger -->
-      <div class="main-header__sm-scr-nav-btn">
-        <div class="main-header__sm-scr-nav-btn-line"></div>
-        <div class="main-header__sm-scr-nav-btn-line"></div>
-      </div>
-      <!-- burger -->
-      <div class="main-header__sm-menu">
-        <div class="main-header__sm-menu-close"></div>
-        <ul class="main-header__sm-menu-links">
-          <li>
-            <a
-              class="main-header__sm-menu-link main-header__sm-menu-link--1"
-              name="home-hero"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-header__sm-menu-link main-header__sm-menu-link--2"
-              name="about"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-header__sm-menu-link main-header__sm-menu-link--3"
-              name="projects"
-              >Projects</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-  
-    <section id="home-hero" class="home-hero">
-      <h1 id="text-animation"></h1>
-    </section>
-    
-    
-    <section id="about" class="about main-section">
-      <div class="main-container">
-        <h2 class="heading-secondary projects__heading-secondary">
-          <span class="heading-secondary__sm">About</span>
-        </h2>
-        <div class="main-section__content">
-          <div class="about__info">
-            <div class="about__main-info">
-              <h3 class="heading-quaternary about__heading-quaternary">
-                My Story
-              </h3>
-              <p class="text-primary about__text-primary">
-                <span>
-                  I am passionate about web development, which is why I decided
-                  to retrain after spending the last 7 years working as a
-                  paramedic
-                </span>
-                <span>
-                  I followed a 5 month training at the Wild Code School and
-                  completed a 6 month internship at the User Agency.
-                </span>
-                <span>
-                  I am currently working at Karbon as a fullstack developer in an apprenticeship program, as part of my diploma validation for application developer.
-                </span>
-              </p>
-            </div>
-            <div class="about__skill-info">
-              <h3 class="heading-quaternary about__heading-quaternary">
-                My Skills
-              </h3>
-              <ul class="about__skills">
-                <li class="about__skill">html</li>
-                <li class="about__skill">css</li>
-                <li class="about__skill">javascript</li>
-                <li class="about__skill">typescript</li>
-                <li class="about__skill">REACT</li>
-                <li class="about__skill">node</li>
-                <li class="about__skill">next</li>
-                <li class="about__skill">nest</li>
-                <li class="about__skill">prisma</li>
-                <li class="about__skill">jest</li>
-                <li class="about__skill">git</li>
-                <li class="about__skill">vscode</li>
-              </ul>
-            </div>
-          </div>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="https://github.com/ThomasDCW" class="main-footer__social-link">
+            <img src="./assets/github.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/thomas-di-cola-251843181/" class="main-footer__social-link">
+            <img src="./assets/linkedin.png" alt="" class="main-footer__social-link-icon" />
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
 
-    <section class="skills-showcase">
-      <ul class="skills-showcase__list">
-        <li class="skills-showcase__list-item">
-          <i class="devicon-html5-plain"></i>
-        </li>
-        <li class="skills-showcase__list-item">
-          <i class="devicon-css3-plain"></i>
-        </li>
-        <li class="skills-showcase__list-item">
-          <i class="devicon-javascript-plain"></i>
-        </li>
-        <li class="skills-showcase__list-item">
-          <i class="devicon-typescript-plain"></i>
-        </li>
-        <li class="skills-showcase__list-item">
-          <i class="devicon-react-original"></i>
-        </li>
-        <li class="skills-showcase__list-item">
-          <i class="devicon-nodejs-plain"></i>
-        </li>
-        <li class="skills-showcase__list-item">
-          <i class="devicon-git-plain"></i>
-        </li>
-      </ul>
-    </section>
-
-    <section id="projects" class="projects main-section">
-      <div class="main-container">
-        <h2 class="heading-secondary projects__heading-secondary">
-          <span class="heading-secondary__sm">Projects</span>
-        </h2>
-        
-        <!-- GALLERY -->
-        <div class="main-section__content">
-          <div class="projects__list">
-              
-            <!--BIGBILL -->
-            <div class="projects__list-item">
-              <div class="projects__list-item-details">
-                <div class="projects__list-item-img-cont">
-                  <img
-                    src="./assets/bigbillfolio.png"
-                    alt="Project Image"
-                    class="projects__list-item-img"
-                  />
-                </div>
-                <h3
-                  class="heading-tertiary projects__list-item-heading-tertiary"
-                >
-                  BigBill
-                </h3>
-                <p class="text-primary projects__list-item-text-primary">
-                  <span class="date-project"> 29 May 2022 </span>
-                  <span>
-                    Pixel art games coded in 24 hours at the first hackathon of
-                    the Wild Code School
-                  </span>
-                  <span>
-                    Invest your money to get rich while protecting the planet
-                  </span>
-                  <br />
-                  <span class="logo-devicon"
-                    ><i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-react-original colored"></i
-                  ></span>
-                </p>
-                <a href="https://github.com/ThomasDCW/hackalillejs0522">
-                  <button class="btn btn-inv projects__btn-inv">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <!-- TODOLIST -->
-            <div class="projects__list-item projects__list-item--inv">
-              <div class="projects__list-item-details">
-                <div class="projects__list-item-img-cont">
-                  <img
-                    src="./assets/todofolio.png"
-                    alt="Project Image"
-                    class="projects__list-item-img"
-                  />
-                </div>
-                <h3
-                  class="heading-tertiary projects__list-item-heading-tertiary"
-                >
-                  TodoList
-                </h3>
-                <p class="text-primary projects__list-item-text-primary">
-                  <span class="date-project"> Spetember | November 2022 </span>
-                  <span>
-                    To-do list management application that includes all
-                    functionalities. You can log in to create, edit and delete
-                    your own todo lists.
-                  </span>
-                  <br />
-                  <span class="logo-devicon"
-                    ><i class="devicon-typescript-plain colored"></i>
-                    <i class="devicon-nextjs-plain-wordmark colored"></i>
-                    <i class="devicon-redux-original colored"></i>
-                    <i class="devicon-postgresql-plain colored"></i>
-                    <i class="devicon-jest-plain colored"></i
-                  ></span>
-                </p>
-                <a href="https://gitlab.com/thomas.dicola/todo">
-                  <button class="btn btn-inv projects__btn-inv">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-            
-            <!--MONAMBULANCE -->
-            <div class="projects__list-item">
-              <div class="projects__list-item-details">
-                <div class="projects__list-item-img-cont">
-                  <img
-                    src="./assets/ambufolio.png"
-                    alt="Project Image"
-                    class="projects__list-item-img"
-                  />
-                </div>
-                <h3
-                  class="heading-tertiary projects__list-item-heading-tertiary"
-                >
-                  MonAmbulance
-                </h3>
-                <p class="text-primary projects__list-item-text-primary">
-                  <span class="date-project">Work in Progress ...</span>
-                  <span>
-                    Online ambulance booking application. I am working on a
-                    first version that I will present to a jury for an
-                    accreditation of learning
-                  </span>
-                  <span class="logo-devicon">
-                    <i class="devicon-typescript-plain colored"></i>
-                    <i class="devicon-nextjs-plain-wordmark colored"></i>
-                    <i class="devicon-redux-original colored"></i>
-                    <i class="devicon-nestjs-plain colored"></i>
-                    <i class="devicon-postgresql-plain colored"></i>
-                    <i class="devicon-jest-plain colored"></i>
-                  </span>
-                </p>
-                <a href="https://gitlab.com/thomas.dicola/ambu-project">
-                  <button class="btn btn-inv projects__btn-inv">
-                    Front-End
-                  </button>
-                </a>
-                <a href="https://gitlab.com/thomas.dicola/ambu-back">
-                  <button class="btn btn-inv projects__btn-inv">
-                    Back-End
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <!--WORK IN MUSIC -->
-            <div class="projects__list-item projects__list-item--inv">
-              <div class="projects__list-item-details">
-                <div class="projects__list-item-img-cont">
-                  <img
-                    src="./assets/wimfolio.png"
-                    alt="Project Image"
-                    class="projects__list-item-img-mob"
-                  />
-                </div>
-                <h3
-                  class="heading-tertiary projects__list-item-heading-tertiary"
-                >
-                  Work in Music
-                </h3>
-                <p class="text-primary projects__list-item-text-primary">
-                  <br />
-                  <span class="date-project">June | July 2022</span>
-                  <span>
-                    Sung lessons on a listening platform, partner project of the
-                    Wild Code School
-                  </span>
-                  <span
-                    >Agil method, daily, weekly meetings, code reviews
-                  </span>
-                  <span class="logo-devicon"
-                    ><i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-react-original colored"></i>
-                    <i class="devicon-express-original-wordmark colored"></i>
-                    <i class="devicon-mysql-plain-wordmark colored"></i>
-                  </span>
-                </p>
-                <a href="https://github.com/WildCodeSchool/2022-03-JS-Lille-project-3-g2-wim">
-                  <button class="btn btn-inv projects__btn-inv">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <!-- MOVIES.COM -->
-            <div class="projects__list-item projects__list-item">
-              <div class="projects__list-item-details">
-                <div class="projects__list-item-img-cont">
-                  <img
-                    src="./assets/moviesfolio.png"
-                    alt="Project Image"
-                    class="projects__list-item-img"
-                  />
-                </div>
-                <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                  Movies.com
-                </h3>
-                <p class="text-primary projects__list-item-text-primary">
-                  <span class="date-project"> January 2023 </span>
-                  <span>
-                    Single Page Application with React, Redux, Redux Saga and
-                    TailwindCSS using TMDB API just for fun !
-                    <br />
-                  </span>
-                  <br />
-                  <span class="logo-devicon">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-react-original colored"></i>
-                    <i class="devicon-redux-original colored"></i>
-                    <i class="devicon-tailwindcss-plain colored"></i>
-                  </span>
-                </p>
-                <a href="https://glittering-sprite-cb0be1.netlify.app/">
-                  <button class="btn btn-inv projects__btn-inv">
-                    Visit
-                  </button>
-                </a>
-                <a href="https://github.com/ThomasDCW/movies.com">
-                  <button class="btn btn-inv projects__btn-inv">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FOOTER -->
-      <footer class="main-footer">
-        <div class="main-footer__upper">
-          <div class="main-container">
-            <ul class="main-footer__links">
-              <li class="main-footer__link">
-                <a href="./index.html">Home</a>
-              </li>
-              <li class="main-footer__link">
-                <a href="./index.html#about">About</a>
-              </li>
-              <li class="main-footer__link">
-                <a href="./index.html#projects">Projects</a>
-              </li>
-            </ul>
-            <div class="main-footer__mid-line"></div>
-            <div class="main-footer__socials">
-              <a
-                href="https://github.com/ThomasDCW"
-                class="main-footer__social-link"
-              >
-                <img
-                  src="./assets/github.png"
-                  alt=""
-                  class="main-footer__social-link-icon"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/thomas-di-cola-251843181/"
-                class="main-footer__social-link"
-              >
-                <img
-                  src="./assets/linkedin.png"
-                  alt=""
-                  class="main-footer__social-link-icon"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-          </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
 </html>
