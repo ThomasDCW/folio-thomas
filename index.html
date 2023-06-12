@@ -18,6 +18,24 @@
   </head>
 
   <body>
+    <script>
+      const textElement = document.getElementById('text');
+      const text = textElement.innerText;
+      textElement.innerText = '';
+  
+      let index = 0;
+      let speed = 100; // Vitesse du défilement (en millisecondes)
+  
+      function type() {
+        if (index < text.length) {
+          textElement.innerText += text.charAt(index);
+          index++;
+          setTimeout(type, speed);
+        }
+      }
+  
+      type();
+    </script>  
     <header class="main-header">
       <div class="main-header__logo-container">
         <div class="main-header__logo-img-cont">
@@ -77,9 +95,12 @@
         </ul>
       </div>
     </header>
-
-    <section id="home-hero" class="home-hero"></section>
-
+  
+    <section id="home-hero" class="home-hero">
+      <h1 id="text-animation"></h1>
+    </section>
+    
+    
     <section id="about" class="about main-section">
       <div class="main-container">
         <h2 class="heading-secondary projects__heading-secondary">
@@ -99,10 +120,10 @@
                 </span>
                 <span>
                   I followed a 5 month training at the Wild Code School and
-                  completed a 6 month internship at the User Agency. I am
-                  focussed on React and Node JavaScript, with a preference for
-                  the front-end, but I am always open to discover new
-                  technologies
+                  completed a 6 month internship at the User Agency.
+                </span>
+                <span>
+                  I am currently working at Karbon as a fullstack developer in an apprenticeship program, as part of my diploma validation for application developer.
                 </span>
               </p>
             </div>
