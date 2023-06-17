@@ -424,6 +424,11 @@ a {
   animation: blink-caret 1s step-end infinite;
 }
 
+.link{
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 @keyframes blink-caret {
 
   from,
