@@ -6,7 +6,7 @@
 }
 
 :root {
-  --themeColor: 0,0,0;
+  --themeColor: 0, 0, 0;
   /* Theme Color in (R,G,B) format */
 }
 
@@ -236,7 +236,7 @@ a {
   border: none;
   border-radius: 10rem;
   /* bleu linkedin */
-  background: #0e76a8
+  background: #0e76a8;
 }
 
 .main-header__sm-scr-nav-btn {
@@ -266,7 +266,6 @@ a {
   .main-header__sm-scr-nav-btn {
     order: 3;
   }
-
 }
 
 .main-header__sm-scr-nav-btn-line {
@@ -403,7 +402,6 @@ a {
   height: 100vh;
 }
 
-
 #text-animation {
   position: relative;
   overflow: hidden;
@@ -414,7 +412,7 @@ a {
 }
 
 #text-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -424,13 +422,12 @@ a {
   animation: blink-caret 1s step-end infinite;
 }
 
-.link{
+.link {
   text-decoration: underline;
   font-weight: 500;
 }
 
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent;

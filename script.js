@@ -66,7 +66,7 @@ smMenuCloseBtn.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("text-animation");
-  const text = "WEB DEVELOPER";
+  const text = "FULLSTACK WEB DEVELOPER";
   let index = 0;
 
   function showNextLetter() {
