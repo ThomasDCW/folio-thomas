@@ -1,3 +1,12 @@
+console.log("Welcome developpers 👋");
+console.log("This is a simple folio made with html css & js");
+console.log("You can find all my projects on github 🚀");
+console.log(" ----------------------------");
+console.log(" https://github.com/ThomasDCW ");
+console.log(" ----------------------------");
+console.log(
+  "🎁 If you want a personal todo app ---> https://todo-app-beta-plum.vercel.app/"
+);
 const smMenuBtn = document.querySelector(".main-header__sm-scr-nav-btn");
 const smMenu = document.querySelector(".main-header__sm-menu");
 const smMenuCloseBtn = document.querySelector(".main-header__sm-menu-close");
@@ -66,7 +75,7 @@ smMenuCloseBtn.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("text-animation");
-  const text = "WEB DEVELOPER";
+  const text = "FULLSTACK DEVELOPER";
   let index = 0;
 
   function showNextLetter() {
