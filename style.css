@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -301,7 +301,7 @@ a {
 .main-header__sm-menu-close:before,
 .main-header__sm-menu-close:after {
   position: absolute;
-  content: " ";
+  content: ' ';
   height: 3rem;
   width: 1px;
   left: 50%;
@@ -393,33 +393,33 @@ a {
 /* CSS */
 .home-hero {
   background-image: url(./assets/home.jpg);
-  background-size: 80% auto;
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
 }
 
 #text-animation {
   position: relative;
   overflow: hidden;
-  color: white;
-  font-weight: 300;
+  color: rgb(252, 252, 252);
+  font-weight: 400;
   font-size: 3em;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.4em;
 }
 
 #text-animation::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
   width: 0;
   height: 100%;
-  border-right: 2px solid #fff;
-  animation: blink-caret 1s step-end infinite;
+  border-right: 2px solid rgb(252, 252, 252);
+  animation: blink-caret 1.3s step-end infinite;
 }
 
 .link {
